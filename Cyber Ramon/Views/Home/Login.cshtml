@@ -45,6 +45,16 @@
 [data-role=footer]{bottom:0; position:absolute !important; top: auto !important; width:100%;} 
     </style>
 
+    <script>
+    function conectar() {
+            var form = $("#UsuarioInfo")
+            alert(form.serialize())
+            $.post("../Home/Ingresar", form.serialize(), respuesta)
+        }
+        function respuesta(data) {
+            window.location.href = data;
+        }
+    </script>
 </head>
 <body>
 
@@ -58,15 +68,16 @@
         </div>
         <div class="ui-body">
             <!-- Contenido -->
-            asdasd
             <div align="center">
                 <div class="LoginBox">
-                    <h1>Login</h1>
-                    <input class="txt" type="text" name="text-basic" id="text-basic" placeholder="Usuario">
+                    <form id="UsuarioInfo">
+                        <h1>Login</h1>
+                        <input class="txt" type="text" name="Usuario" placeholder="Usuario">
 
-                    <input class="txt" type="password" name="password" id="password" value="" placeholder="*******" autocomplete="off">
+                        <input class="txt" type="password" name="Contraseña"  placeholder="*******" autocomplete="off">
 
-                    <a href="#" class="ui-btn ui-icon-check ui-btn-icon-left">Aceptar</a>
+                        <a href="#" onclick="conectar()" class="ui-btn ui-icon-check ui-btn-icon-left">Aceptar</a>
+                    </form>
                 </div>
             </div>
             <!-- Contenido -->

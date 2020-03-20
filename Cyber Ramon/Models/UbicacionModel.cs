@@ -7,5 +7,7 @@ namespace Cyber_Ramon.Models
 {
     public class UbicacionModel
     {
+        public int id { get; }
+        public String Nombre { get; set; }
     }
 }
