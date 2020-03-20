@@ -1,0 +1,63 @@
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\Cyber Ramon.dll.config
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\Cyber Ramon.dll
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\Cyber Ramon.pdb
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\roslyn\csc.exe
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\roslyn\csc.exe.config
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\roslyn\csc.rsp
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\roslyn\csi.exe
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\roslyn\csi.rsp
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\roslyn\System.AppContext.dll
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\roslyn\vbc.exe
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\roslyn\vbc.exe.config
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\roslyn\vbc.rsp
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\roslyn\VBCSCompiler.exe
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\Antlr3.Runtime.dll
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\Newtonsoft.Json.dll
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\System.Web.Helpers.dll
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\System.Web.Mvc.dll
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\System.Web.Optimization.dll
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\System.Web.Razor.dll
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\System.Web.WebPages.Deployment.dll
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\System.Web.WebPages.dll
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\System.Web.WebPages.Razor.dll
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\WebGrease.dll
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\System.Web.Helpers.xml
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\System.Web.Mvc.xml
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\System.Web.Optimization.xml
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\System.Web.Razor.xml
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\System.Web.WebPages.xml
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\System.Web.WebPages.Deployment.xml
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\System.Web.WebPages.Razor.xml
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\Newtonsoft.Json.xml
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\Antlr3.Runtime.pdb
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\es\System.Web.Helpers.resources.dll
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\es\System.Web.Mvc.resources.dll
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\es\System.Web.Optimization.resources.dll
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\es\System.Web.Razor.resources.dll
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\es\System.Web.WebPages.resources.dll
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\obj\Debug\Cyber Ramon.csproj.CopyComplete
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\obj\Debug\Cyber Ramon.dll
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\obj\Debug\Cyber Ramon.pdb
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\obj\Debug\Cyber Ramon.csprojAssemblyReference.cache
+C:\Users\omarw\source\repos\Cyber Ramon\Cyber Ramon\bin\MySql.Data.dll

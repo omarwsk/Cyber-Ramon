@@ -1,0 +1,67 @@
+﻿
+@{
+    ViewBag.Title = "Caja";
+    Layout = "~/Views/Shared/Menu.cshtml";
+}
+
+    <style type="text/css" media="screen and (max-width:700px)">
+        .FormBox {
+            width: 90%;
+            padding: 5%;
+            border: 4px outset;
+            margin-top: 3%;
+            background-color: white
+        }
+
+        .txt {
+            text-align: center !important;
+            width: 100%;
+        }
+    </style>
+<script>
+    function Confirmar(){
+        if (window.confirm("Desea aceptar?"))
+        { 
+        alert("Aceptado");
+        }
+    }
+</script>
+<!-- Contenido -->
+
+<div data-theme="b" align="center">
+    <div class="FormBox">
+
+        <label>Fecha:</label>
+        <input class="txt SoloLectura" type="datetime-local" value="@DateTime.Now.ToString("s")" name="text-basic" readonly>
+
+        <label>Turno:</label>
+        <select name="select-choice-a" id="select-choice-a" data-native-menu="false">
+            <option selected value="Matutino">Matutino</option>
+            <option value="Vespertino">Vespertino</option>
+            <option value="Completo">Completo</option>
+        </select>
+
+        <label>Fondo:</label>
+        <input class="txt" type="number" step="0.01" name="Fondo" value="0.00">
+
+        <label>Corte:</label>
+        <input class="txt" type="number" step="0.01" name="Corte" value="0.00">
+
+        <label>Sobre:</label>
+        <input class="txt" type="number" step="0.01" name="Sobre" value="0.00">
+
+        <label>Caja:</label>
+        <input class="txt" type="number" step="0.01" name="Caja" value="0.00">
+
+        <hr>
+
+        <label>Entradas:</label>
+        <input class="txt" type="number" step="0.01" name="text-basic" placeholder="0.00">
+
+        <label>Salidas:</label>
+        <input class="txt" type="number" step="0.01" name="text-basic" placeholder="0.00">
+
+        <a href="#" onclick="Confirmar()" class="ui-btn ui-icon-check ui-btn-icon-left">Aceptar</a>
+    </div>
+</div>
+<!-- Contenido -->
