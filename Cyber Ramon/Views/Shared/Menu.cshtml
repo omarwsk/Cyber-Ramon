@@ -1,4 +1,5 @@
-﻿
+﻿@using Cyber_Ramon.Models;
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -75,24 +76,37 @@
     <div data-theme="a" data-role="page" id="page1">
 
         <!-- PANEL -->
-        <div  class="MenuPanel" data-theme="b" data-role="panel" id="overlayPanel" data-display="overlay">
+        <div class="MenuPanel" data-theme="b" data-role="panel" id="overlayPanel" data-display="overlay">
             <div data-role="header" class="ui-header">
                 <h2>Menu</h2>
             </div>
-            <fieldset data-role="controlgroup">
-                <span class="MenuTitle MenuElement badge badge-primary">Seccion #1</span>
-                <a href="#" class="MenuElement ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a">Opcion #1</a>
-                <a href="#" class="MenuElement ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a">Opcion #2</a>
-                <a href="#" class="MenuElement ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a">Opcion #3</a>
-            </fieldset>
+            @if (ViewBag.PermisoCaja > 0 ) {
+        <fieldset data-role="controlgroup">
+            <span class="MenuTitle MenuElement badge badge-primary">Caja</span>
+            <a href="../home/caja" class="MenuElement ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a">Registrar dia</a>
 
-            <fieldset data-role="controlgroup">
-                <span class="MenuTitle MenuElement badge badge-primary">Seccion #2</span>
-                <a href="#" class="MenuElement ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a">Opcion #1</a>
+            @if (ViewBag.PermisoCaja == 2)
+            {
                 <a href="#" class="MenuElement ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a">Opcion #2</a>
+            }
+            @if (ViewBag.PermisoCaja == 3) { 
+                <a href="#" class="MenuElement ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a">Opcion #3</a>
+            }
+        </fieldset>
+            }
+            
+
+            @if (ViewBag.PermisoEmpleados > 0)
+            {
+            <fieldset data-role="controlgroup">
+                <span class="MenuTitle MenuElement badge badge-primary">Empleados</span>
+                <a href="#" class="MenuElement ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a">Ver todos</a>
+                <a href="#" class="MenuElement ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a">Nuevo</a>
                 <a href="#" class="MenuElement ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a">Opcion #3</a>
             </fieldset>
-                <a href="#page1" style="margin-top: 10%" data-rel="close" class="MenuElement ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Cerrar</a>
+            }
+
+            <a href="#page1" style="margin-top: 10%" data-rel="close" class="MenuElement ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Cerrar</a>
         </div>
         <!-- PANEL -->
 
@@ -110,7 +124,7 @@
         </div>
         <div data-theme="b"  data-fullscreen="true" data-position="fixed" data-role="footer">
             <div align="center" data-role="controlgroup" data-type="horizontal">
-                <a href="../home/salir" data-role="button" data-inline="true">Salir</a><a href="#" data-role="button" data-inline="true">Button</a><a href="#" data-role="button" data-inline="true">Button</a>
+                <a href="../home/salir" data-role="button" data-inline="true">Salir</a><a href="../home/index" data-role="button" data-inline="true">Inicio</a><a href="#" data-role="button" data-inline="true">Button</a>
             </div><!-- /controlgroup -->
         </div>
     </div>

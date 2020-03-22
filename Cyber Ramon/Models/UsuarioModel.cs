@@ -13,10 +13,21 @@ namespace Cyber_Ramon.Models
         public String Usuario { get; set; }
         public String Contraseña { get; set; }
         public String Tipo { get; set; }
-        public PermisosModel[] Permisos { get; set; }
 
-        public UsuarioModel(int id, String usuario, String puesto, String tipo, PermisosModel[] permisos)
+        public List<PermisosModel> Permisos = new List<PermisosModel>()
         {
+         new PermisosModel("caja", 1),
+         new PermisosModel("empleados", 0),
+         new PermisosModel("usuarios", 0)
+    };
+
+        
+
+
+
+        public UsuarioModel(int id, String usuario, String puesto, String tipo, List<PermisosModel> permisos)
+        {
+            
             ID = id;
             Usuario = usuario;
             Contraseña = puesto;
@@ -33,7 +44,6 @@ namespace Cyber_Ramon.Models
         public int Registrar()
         {
             MySqlConnection conexion = new ConexionModel().ConexionMysql();
-            int Respuesta = 0;
             MySqlDataReader rdr = null;
             try
             {
@@ -50,19 +60,23 @@ namespace Cyber_Ramon.Models
 
                 while (rdr.Read())
                 {
-                    int ID = Convert.ToInt32(rdr["ultimo"]);
+                    ID = Convert.ToInt32(rdr["ultimo"]);
 
-                    Respuesta = ID;
+                    foreach (PermisosModel Permiso in Permisos)
+                    {
+                        Permiso.Registrar(ID);
+                    }
+
                 }
                 rdr.Close();
                 
             }
-            catch (Exception ex) { Respuesta = 0; }
+            catch (Exception ex) { ID = 0; }
 
             conexion.Close();
 
 
-            return Respuesta;
+            return ID;
         }
 
         public bool existe()
@@ -113,7 +127,37 @@ namespace Cyber_Ramon.Models
                     rdr.Read();
                     ID  = Convert.ToInt32(rdr["idUsuario"]);
                     Tipo = rdr["Tipo"].ToString();
+                    Permisos = ObtenerListaPermisos(ID);
                     Respuesta = true;
+                }
+
+                rdr.Close();
+            }
+            catch (Exception ex) { }
+
+            conexion.Close();
+
+            return Respuesta;
+        }
+
+        public List<PermisosModel> ObtenerListaPermisos( int idUsuario)
+        {
+            MySqlConnection conexion = new ConexionModel().ConexionMysql();
+            List<PermisosModel> Respuesta = new List<PermisosModel>();
+            MySqlDataReader rdr = null;
+            try
+            {
+                conexion.Open();
+                string stm = "SELECT * FROM permisos WHERE idUsuario=@idUsuario";
+
+                MySqlCommand cmd = new MySqlCommand(stm, conexion);
+                cmd.Parameters.AddWithValue("@idUsuario", idUsuario);
+                rdr = cmd.ExecuteReader();
+
+                while (rdr.Read())
+                {
+                    PermisosModel Permiso = new PermisosModel(rdr["Nombre"].ToString(), Convert.ToInt32(rdr["Nivel"]));
+                    Respuesta.Add(Permiso);
                 }
 
                 rdr.Close();

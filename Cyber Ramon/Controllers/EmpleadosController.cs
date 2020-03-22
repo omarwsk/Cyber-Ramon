@@ -7,12 +7,13 @@ using Cyber_Ramon.Models;
 
 namespace Cyber_Ramon.Controllers
 {
-    public class EmpleadosController : Controller
+    public class EmpleadosController : BaseController
     {
+
         // GET: Empleados
         public ActionResult Nuevo()
         {
-            return View();
+            return ChecarSessionConectada();
         }
 
         public String AgregarEmpleadoMYSQL(EmpleadoModel Empleado, String stringUsuario, String stringContraseña, String Ubicacion)
